@@ -9,4 +9,9 @@ body {
   outline: 1px dotted black;
 }
 
+
+
+.lg-image {
+  box-shadow: 0 0 60 50px blue;
+}
 /* Your Awesome Scripts */
