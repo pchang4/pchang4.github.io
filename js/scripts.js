@@ -7,4 +7,4 @@ console.log('OK');
 
 
 // Light Gallery
-$('#gallery-1').lightGallery();
+$('.grid').lightGallery();
