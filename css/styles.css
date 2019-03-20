@@ -213,7 +213,7 @@
  .mainimg1 h3, .mainimg2 h3, .mainimg3 h3 {
    position: absolute;
    color: white;
-   font-size: 10vw;
+   font-size: 6vw;
    bottom: 0;
     filter: none;
    padding: .5vw;
