@@ -7,4 +7,8 @@ console.log('OK');
 
 
 // Light Gallery
-$('.grid').lightGallery();
+$('.grid').lightGallery({
+
+    subHtmlSelectorRelative: true
+});
+
