@@ -15,20 +15,164 @@
   box-shadow: 0 0 60 50px blue;
 } */
 /* Your Awesome Scripts */
-
+ ::-webkit-scrollbar {
+  display: none;
+}
 
 *{
   margin: 0;
    font-family: 'Righteous', cursive;
    scrollbar-width: none
  }
+
+
+
  
  body {
     scroll-snap-type: y mandatory;
     background-color: black;
     width: 100%;
+    position: relative;
  }
  
+/* Loadscreen */
+.preloader{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  animation-name: fadeout;
+  animation-delay: 10.5s;
+  animation-duration: 1.2s;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+
+@keyframes fadeout{
+        0% {
+          
+          opacity: 1;
+          top:0;
+
+        }
+        100%  {
+          
+          opacity: 0;
+          top:-100vh;
+        }
+      }
+
+.circleview {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  background-color: black;
+  width: 20vw;
+  height: 0vw;
+    animation-name: expand;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand{
+        0% {
+          
+          height: 0vw;
+
+        }
+        100%  {
+          
+          height: 40vw;
+          width: 40vw;
+        }
+      }
+
+
+.circleview h3 {
+  margin: 0;
+ position: absolute;
+  color: white;
+  left: 30vw;
+  font-size: 21vw;
+  text-transform: uppercase;
+  animation-name: slide;
+  animation-delay: 5s;
+  animation-duration: 6s;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes expand{
+        0% {
+          
+          height: 0vw;
+
+        }
+        100%  {
+          
+          height: 40vw;
+          width: 40vw;
+        }
+      }
+
+
+@keyframes slide{
+        0% {
+          
+          left: 30vw;;
+        }
+        100%  {
+          
+          left: -100vw;
+        }
+      }
+
+
+
+.loadingbar {
+  position: absolute;
+  height: 5vw;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  bottom: 20%;
+  left: -50vw;
+    animation-name: slidebar;
+  animation-delay: 6s;
+  animation-duration: 9s;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slidebar{
+        0% {
+          
+          left: -50vw;
+        }
+        50%  {
+          
+          left: 0vw;
+          transform: scale(1);
+        }
+
+        100%  {
+          
+          left: 0vw;
+          transform: scale(100);
+        }
+      }
+
+
  
  header {
    position: relative;
