@@ -219,6 +219,22 @@
    padding: .5vw;
  }
 
+
+/* About Page */
+
+.aboutpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+.abouttxt {
+  margin-top: 20%;
+  width: 50%;
+}
+
  /* Portfolio Grid */
 
  img {
