@@ -26,6 +26,7 @@
  body {
     scroll-snap-type: y mandatory;
     background-color: black;
+    width: 100%;
  }
  
  
