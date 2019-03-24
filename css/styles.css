@@ -305,3 +305,29 @@ form textarea{
   height: 33%;
   font-size: 1.5vw;
 }
+
+/* Error */
+.errorbody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.errortxt {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 20vw;
+  margin: auto;
+  
+
+}
+
+.errortxt h1 {
+  font-size: 20vw;
+  margin: 0;
+}
