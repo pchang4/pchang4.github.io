@@ -489,7 +489,21 @@
 }
 
 .lg-sub-html{
-  background-color: rgba(0,0,0,.85)
+  background-color: rgba(0,0,0,.85);
+}
+
+.lg-sub-html h4 {
+  font-size: 1.5rem;
+}
+
+.lg-sub-html p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+}
+
+
+#lg-download, .lg-autoplay-button.lg-icon, #lg-actual-size, #lg-share {
+  display: none;
 }
 
 /* Contact Page */
@@ -500,7 +514,7 @@
   width: 100%;
   height: 100%;
   animation-name: fadeinbody;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-fill-mode: none;
   animation-fill-mode: forwards;
 }
@@ -510,6 +524,7 @@
     margin-top: 10vw;
     opacity:0;
   }
+
 
   100% {
     margin-top: 0vw;
@@ -559,11 +574,29 @@ form textarea{
   width: 50%;
   height: 20vw;
   margin: auto;
-  
-
+  animation-name: fadeinerror;
+  animation-duration: 4s;
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadeinerror {
+  0% {
+    margin-top: 40vw;
+    opacity:0;
+  }
+
+
+  100% {
+    margin-top: 10vw;
+    opacity:1;
+  }
+}
 .errortxt h1 {
   font-size: 20vw;
   margin: 0;
+}
+
+.errortxt p {
+  font-family: 'Oswald', sans-serif;
 }
