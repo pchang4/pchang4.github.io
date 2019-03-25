@@ -8,7 +8,6 @@ console.log('OK');
 
 // Light Gallery
 $('.grid').lightGallery({
-
     subHtmlSelectorRelative: true
 });
 
